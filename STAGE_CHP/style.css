@@ -1,0 +1,217 @@
+/* ======================
+   GLOBAL
+   ====================== */
+body {
+    background-color: #f4f8fb;
+    font-family: Arial, sans-serif;
+}
+
+/* ======================
+   TITRES
+   ====================== */
+h1 {
+    color: #0b3d91;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2rem;
+    border-bottom: 3px solid #0b3d91;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+h2, h3 {
+    color: #0b3d91;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* ======================
+   SIDEBAR
+   ====================== */
+section[data-testid="stSidebar"] {
+    background-color: #0b2e4a;
+    color: white;
+}
+
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+section[data-testid="stSidebar"] .stTextInput input {
+    background-color: #163a5c;
+    color: white;
+    border: 1px solid #4a7fa5;
+    border-radius: 6px;
+}
+
+section[data-testid="stSidebar"] .stButton>button {
+    background-color: #e63946;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+section[data-testid="stSidebar"] .stButton>button:hover {
+    background-color: #c1121f;
+}
+
+/* ======================
+   BOUTONS
+   ====================== */
+.stButton>button {
+    background-color: #0b3d91;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 18px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.stButton>button:hover {
+    background-color: #06264f;
+    transform: scale(1.02);
+}
+
+/* ======================
+   MÉTRIQUES KPI
+   ====================== */
+div[data-testid="metric-container"] {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    border-left: 4px solid #0b3d91;
+    transition: transform 0.2s ease;
+}
+
+div[data-testid="metric-container"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+}
+
+div[data-testid="metric-container"] label {
+    color: #6b7280 !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+}
+
+div[data-testid="metric-container"] div[data-testid="metric-value"] {
+    color: #0b3d91 !important;
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+}
+
+/* ======================
+   TABLES
+   ====================== */
+table {
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+thead tr th {
+    background-color: #0b3d91 !important;
+    color: white !important;
+    padding: 10px !important;
+    font-weight: bold !important;
+}
+
+tbody tr:hover {
+    background-color: #e8f0fe !important;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fbfd;
+}
+
+/* ======================
+   DATAFRAME
+   ====================== */
+div[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e6eef5;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.06);
+}
+
+/* ======================
+   ALERTES
+   ====================== */
+div[data-testid="stAlert"] {
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* ======================
+   INPUTS
+   ====================== */
+.stTextInput input,
+.stNumberInput input,
+.stSelectbox select {
+    border-radius: 8px;
+    border: 1px solid #c8d8e8;
+    padding: 8px;
+    transition: border 0.2s ease;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus {
+    border: 1px solid #0b3d91;
+    box-shadow: 0 0 0 2px rgba(11,61,145,0.15);
+}
+
+/* ======================
+   FILE UPLOADER
+   ====================== */
+div[data-testid="stFileUploader"] {
+    border: 2px dashed #0b3d91;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #f0f5ff;
+}
+
+/* ======================
+   TABS
+   ====================== */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 6px;
+    color: #0b3d91;
+    font-weight: 500;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #0b3d91 !important;
+    color: white !important;
+}
+
+/* ======================
+   SCROLLBAR
+   ====================== */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0b3d91;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #06264f;
+}
